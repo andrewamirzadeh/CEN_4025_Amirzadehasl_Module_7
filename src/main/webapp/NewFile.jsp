@@ -27,6 +27,17 @@
 <input type="submit" value="Submit">
 </form>
 
+<br>
+<br>
+
+<form action="action_show.jsp">
+<label for="Name">Search To do List by ID:</label>
+<input type="text" id="Name" name="Name" placeholder="Wash car">
+<input type="submit" value="Submit">
+</form>
+
+
+
 <h2>CURRENT TODO LIST</h2>
 
 <table border="1" width="40%">

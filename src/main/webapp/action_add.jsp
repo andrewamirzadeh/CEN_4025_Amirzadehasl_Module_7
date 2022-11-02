@@ -18,18 +18,20 @@
 	PreparedStatement pstmt = null;
 	ResultSet rs = null;
 	  try{
-		  
-		 
-		 
+		  		 
 		  String url = "jdbc:mysql://localhost:3306/todolists";
 		  String username = "root";
 		  String password = "Root1234!";
 		  Class.forName("com.mysql.jdbc.Driver");
 		  Connection con = DriverManager.getConnection(url,username,password);
 		 
+		  //good code
 		  String qry ="INSERT INTO todolist (toDoListItems) values(?)";
 		  pstmt = con.prepareStatement(qry);
 		  pstmt.setString(1,add); 
+		  
+	
+
 		  pstmt.executeUpdate();
 		  con.close();
 
