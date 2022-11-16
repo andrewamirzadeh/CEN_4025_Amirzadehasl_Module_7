@@ -18,17 +18,18 @@
 <th>Task</th>
 <tbody>
 <%
-	String add = request.getParameter("Name");
+	String add = request.getParameter("show");
 	Statement st = null;
 	ResultSet rs = null;
 	  try{
-		  String url = "jdbc:mysql://localhost:3306/todolists";
+		  String url = "jdbc:mysql://localhost:3306/todolists?allowMultiQueries=true";
 		  String username = "root";
 		  String password = "Root1234!";
 		  Class.forName("com.mysql.jdbc.Driver");
 		  Connection con = DriverManager.getConnection(url,username,password);
 		  st = con.createStatement();
 		  String qry ="select * from todolist where tdListId= " + add; 
+		  
 		  rs = st.executeQuery(qry);
 		  while(rs.next()){ %>
 		  <tr>

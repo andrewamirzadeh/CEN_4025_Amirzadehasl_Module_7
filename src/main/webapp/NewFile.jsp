@@ -31,8 +31,8 @@
 <br>
 
 <form action="action_show.jsp">
-<label for="Name">Search To do List by ID:</label>
-<input type="text" id="Name" name="Name" placeholder="Wash car">
+<label for="show">Search To do List by ID:</label>
+<input type="text" id="show" name="show" placeholder="4...5...6">
 <input type="submit" value="Submit">
 </form>
 
@@ -73,7 +73,7 @@
 		     }
 		    %>
 </tbody>
-
+</table>
 
 </body>
 </html>
